@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <app-header></app-header>
+  <app-todo-input></app-todo-input>
+  <div *ngFor="let todo of todoService.getTodos()">
+    <app-todo-item [todo]="todo"></app-todo-item>
+  </div>
+</div>
